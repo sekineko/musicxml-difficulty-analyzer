@@ -243,11 +243,11 @@ Contributions are welcome! Areas for improvement:
 
 ## License
 
-[Specify your license here]
+MIT License - see [LICENSE](LICENSE) file for details
 
 ## Author
 
-[Your name/contact]
+sekineko - https://github.com/sekineko
 
 ## Acknowledgments
 
