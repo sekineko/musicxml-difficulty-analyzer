@@ -169,10 +169,7 @@ def analyze_musicxml(xml_path):
         penalty_points += 5
 
     # Key signature penalty
-    if avg_abs_sharps_flats >= 5:
-        penalty_points += 10
-    elif avg_abs_sharps_flats >= 3:
-        penalty_points += 5
+    penalty_points += min(int(avg_abs_sharps_flats), 7) * 3
 
     # Modulation penalty
     if key_changes >= 2:
@@ -181,9 +178,15 @@ def analyze_musicxml(xml_path):
         penalty_points += 3
 
     # Accidental penalty
-    if accidental_ratio > 0.15:
+    if accidental_ratio > 0.25:
+        penalty_points += 25
+    elif accidental_ratio > 0.20:
+        penalty_points += 20
+    elif accidental_ratio > 0.15:
+        penalty_points += 15
+    elif accidental_ratio > 0.10:
         penalty_points += 10
-    elif accidental_ratio > 0.08:
+    elif accidental_ratio > 0.05:
         penalty_points += 5
 
     # Interval penalty
