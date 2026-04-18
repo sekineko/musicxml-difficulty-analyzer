@@ -104,16 +104,18 @@ Additional difficulty points are added based on various musical factors:
 - \> 10% very short notes: +5 points
 
 **Key Signature Penalties:**
-- ≥ 5 sharps/flats: +10 points
-- ≥ 3 sharps/flats: +5 points
+- +3 points per sharp/flat (e.g. 2 sharps = +6, 4 flats = +12, max 7 = +21)
 
 **Modulation Penalties:**
 - ≥ 2 key changes: +5 points
 - ≥ 1 key change: +3 points
 
 **Accidental Penalties:**
-- \> 15% notes with accidentals: +10 points
-- \> 8% notes with accidentals: +5 points
+- \> 25% notes with accidentals: +25 points
+- \> 20% notes with accidentals: +20 points
+- \> 15% notes with accidentals: +15 points
+- \> 10% notes with accidentals: +10 points
+- \> 5% notes with accidentals: +5 points
 
 **Interval Penalties:**
 - Average interval > 4 semitones: +10 points
